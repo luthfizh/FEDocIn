@@ -26,7 +26,7 @@ export default function MyModal(props) {
     };
     axios.defaults.headers.common["x-auth-token"] = token;
     axios.put(
-      `http://localhost:5000/appointments/accept/${props.id}`,
+      `https://bedocin.vercel.app/appointments/accept/${props.id}`,
       {
         status: "accepted",
       },
@@ -54,7 +54,7 @@ export default function MyModal(props) {
     };
     axios.defaults.headers.common["x-auth-token"] = token;
     axios.put(
-      `http://localhost:5000/appointments/reject/${props.id}`,
+      `https://bedocin.vercel.app/appointments/reject/${props.id}`,
       {
         status: "rejected",
       },
@@ -87,7 +87,7 @@ export default function MyModal(props) {
     if (query.subject && query.explanation && query.date && query.time) {
       axios
         .put(
-          `http://localhost:5000/appointments/${props.id}`,
+          `https://bedocin.vercel.app/appointments/${props.id}`,
           {
             subject: query.subject,
             explanation: query.explanation,

@@ -11,7 +11,7 @@ export default function UserAppoinment() {
   var decoded = jwt_decode(token);
 
   const client = axios.create({
-    baseURL: "http://localhost:5000/appointments",
+    baseURL: "https://bedocin.vercel.app/appointments",
   });
 
   function getData() {

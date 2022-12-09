@@ -38,7 +38,7 @@ export default function DoctorDetails(props) {
       setFormData({ ...formData, textChange: "Submitting" });
       axios
         .post(
-          `http://localhost:5000/appointments/create-request`,
+          `https://bedocin.vercel.app/appointments/create-request`,
           {
             subject,
             explanation,
@@ -83,7 +83,7 @@ export default function DoctorDetails(props) {
   useEffect(() => {
     async function fetchData() {
       const response = await axios(
-        `http://localhost:5000/doctors/${params.id}`
+        `https://bedocin.vercel.app/doctors/${params.id}`
       );
       setDoctors(response.data);
     }

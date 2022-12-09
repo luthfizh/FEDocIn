@@ -11,7 +11,7 @@ export default function EditProfileDoctor() {
 
   const getData = () => {
     axios
-      .get(`http://localhost:5000/doctors/${decoded.id}`, {
+      .get(`https://bedocin.vercel.app/doctors/${decoded.id}`, {
         headers: { "x-auth-token": token },
       })
       .then((res) => {
@@ -62,7 +62,7 @@ export default function EditProfileDoctor() {
     ) {
       axios
         .put(
-          `http://localhost:5000/doctors/${decoded.id}`,
+          `https://bedocin.vercel.app/doctors/${decoded.id}`,
           {
             name: query.name,
             speciality: query.speciality,

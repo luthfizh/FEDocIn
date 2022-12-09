@@ -11,7 +11,7 @@ export default function EditProfileUser() {
 
   const getData = () => {
     axios
-      .get(`http://localhost:5000/users/current-user`, {
+      .get(`https://bedocin.vercel.app/users/current-user`, {
         headers: { "x-auth-token": token },
       })
       .then((res) => {
@@ -51,7 +51,7 @@ export default function EditProfileUser() {
     ) {
       axios
         .put(
-          `http://localhost:5000/users/${decoded.id}`,
+          `https://bedocin.vercel.app/users/${decoded.id}`,
           {
             firstName: query.firstName,
             lastName: query.lastName,

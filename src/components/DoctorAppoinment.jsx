@@ -13,7 +13,7 @@ export default function DoctorAppoinment() {
   var decoded = jwt_decode(token);
 
   const client = axios.create({
-    baseURL: "http://localhost:5000/appointments",
+    baseURL: "https://bedocin.vercel.app/appointments",
   });
 
   useEffect(() => {

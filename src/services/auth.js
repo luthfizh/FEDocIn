@@ -1,7 +1,7 @@
 import callAPI from "../config/api";
 
 export async function setSignUpUser(data) {
-  const url = "http://localhost:5000/users/signup";
+  const url = "https://bedocin.vercel.app/users/signup";
 
   return callAPI({
     url,
@@ -11,7 +11,7 @@ export async function setSignUpUser(data) {
 }
 
 export async function setLoginUser(data) {
-  const url = "http://localhost:5000/users/login";
+  const url = "https://bedocin.vercel.app/users/login";
 
   return callAPI({
     url,
@@ -21,7 +21,7 @@ export async function setLoginUser(data) {
 }
 
 export async function setSignUpDoctor(data) {
-  const url = "http://localhost:5000/doctors/signup";
+  const url = "https://bedocin.vercel.app/doctors/signup";
 
   return callAPI({
     url,
@@ -31,7 +31,7 @@ export async function setSignUpDoctor(data) {
 }
 
 export async function setLoginDoctor(data) {
-  const url = "http://localhost:5000/doctors/login";
+  const url = "https://bedocin.vercel.app/doctors/login";
 
   return callAPI({
     url,

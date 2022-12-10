@@ -7,6 +7,7 @@ export async function setSignUpUser(data) {
     url,
     method: "post",
     data,
+    "Access-Control-Allow-Origin": "https://bedocin.vercel.app/"
   });
 }
 
@@ -17,6 +18,7 @@ export async function setLoginUser(data) {
     url,
     method: "post",
     data,
+    "Access-Control-Allow-Origin": "https://bedocin.vercel.app/"
   });
 }
 
@@ -27,6 +29,7 @@ export async function setSignUpDoctor(data) {
     url,
     method: "post",
     data,
+    "Access-Control-Allow-Origin": "https://bedocin.vercel.app/"
   });
 }
 
@@ -37,5 +40,6 @@ export async function setLoginDoctor(data) {
     url,
     method: "post",
     data,
+    "Access-Control-Allow-Origin": "https://bedocin.vercel.app/"
   });
 }

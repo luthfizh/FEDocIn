@@ -1,7 +1,7 @@
 import callAPI from "../config/api";
 
 export async function setSignUpUser(data) {
-  const url = "https://paw-kelompok18.vercel.app/users/signup";
+  const url = "https://bedocin.vercel.app/users/signup";
 
   return callAPI({
     url,
@@ -11,7 +11,7 @@ export async function setSignUpUser(data) {
 }
 
 export async function setLoginUser(data) {
-  const url = "https://paw-kelompok18.vercel.app/users/login";
+  const url = "https://bedocin.vercel.app/users/login";
 
   return callAPI({
     url,
@@ -21,7 +21,7 @@ export async function setLoginUser(data) {
 }
 
 export async function setSignUpDoctor(data) {
-  const url = "https://paw-kelompok18.vercel.app/doctors/signup";
+  const url = "https://bedocin.vercel.app/doctors/signup";
 
   return callAPI({
     url,
@@ -31,7 +31,7 @@ export async function setSignUpDoctor(data) {
 }
 
 export async function setLoginDoctor(data) {
-  const url = "https://paw-kelompok18.vercel.app/doctors/login";
+  const url = "https://bedocin.vercel.app/doctors/login";
 
   return callAPI({
     url,
